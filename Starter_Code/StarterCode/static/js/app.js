@@ -5,7 +5,7 @@ function modifyDashboard(selectedValue) {
     let ss = sampleData.find(sample => sample.id === selectedValue);
     
 
-    let trace1 = {
+    let trace = {
         x: ss.sample_values.slice(0, 10).sort((function (a, b) {return a - b})),
         y: ss.otu_id.slice(0, 10).map(id => `OTU ${id}`).reverse(),
         text: ss.otu_labels.slice(0, 10),
@@ -16,7 +16,7 @@ function modifyDashboard(selectedValue) {
             opacity: 0.75
         }
     };
-    let hBarChart = [trace1];
+    let hBarChart = [trace];
     
     let layout = {
         margin: {
@@ -36,7 +36,7 @@ function modifyDashboard(selectedValue) {
     Plotly.newPlot('bar', hBarChart, layout);
 
 
-    let trace2 = { 
+    let trace_1 = { 
         x: ss.otu_id,
         y: ss.sample_values,
         mode: 'markers',
@@ -48,7 +48,7 @@ function modifyDashboard(selectedValue) {
 
     };
 
-    let bubbleChart = [trace2];
+    let bubbleChart = [trace_1];
 
     let bubbleLayout = {
         showlegend: false,
@@ -91,7 +91,7 @@ function modifyDashboard(selectedValue) {
     let wfreqValue = selectedMetadata.wfreq;
 
 
-    let gaugeData = [
+    let gData = [
         {
             domain: { x: [0, 1], y: [0, 1] },
             title: {
@@ -128,7 +128,7 @@ function modifyDashboard(selectedValue) {
         margin: { t: 0, b: 145, pad: 8 }
     };
 
-    Plotly.newPlot('gauge', gaugeData, layout2);
+    Plotly.newPlot('gauge', gData, layout2);
 
 };  
 
