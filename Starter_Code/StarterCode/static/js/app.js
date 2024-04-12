@@ -173,7 +173,7 @@ d3.json(url).then(function(data) {
         'bbtype': field.bbtype,
         'wfreq': field.wfreq
     })); 
-
+    console.log(metaField);
     modifyDashboard(names[0]);
 
 }).catch(function(error) {
