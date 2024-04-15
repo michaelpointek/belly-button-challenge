@@ -1,10 +1,13 @@
-Belly Button Biodiversity Dashboard
+**Belly Button Biodiversity Dashboard**
+
 Welcome to the Belly Button Biodiversity Dashboard repository! This project presents an interactive dashboard that allows users to explore the fascinating world of microbial species inhabiting human navels, as cataloged in the Belly Button Biodiversity dataset.
 
-Background
+**Background**
+
 The Belly Button Biodiversity dataset offers intriguing insights into the microbial communities residing in human navels. It highlights that while some microbial species are prevalent in a significant portion of individuals, others are relatively rare. This project aims to visualize and explore this dataset through interactive charts and graphs.
 
-Getting Started
+**Getting Started**
+
 To begin exploring the Belly Button Biodiversity Dashboard, follow these steps:
 
 Clone Repository: Clone this repository to your local machine.
@@ -21,13 +24,16 @@ Sample Metadata Display: Showcases an individual's demographic information, disp
 
 Dynamic Plot Updates: All plots update dynamically when a new sample is selected from the dropdown menu.
 
-Deployment
+**Deployment**
+
 The Belly Button Biodiversity Dashboard is deployed on GitHub Pages for easy access. You can access the deployed dashboard using the following link:
 
 Dashboard Deployment <!-- Replace '#' with the actual deployment link -->
 
-Acknowledgments
+**Acknowledgments**
+
 Special thanks to the creators of the Belly Button Biodiversity dataset and the resources provided for this project.
 
-License
+**License**
+
 This project is licensed under the MIT License.
